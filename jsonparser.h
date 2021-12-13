@@ -21,6 +21,10 @@ const int JSON_NUMBER_SIZE = 28;
 const int JSON_STRINGIFY_SIZE = 4096;
 
 // Collection
+/**
+ * @brief A collection mimics an array (or tuple) to store data of any kind which can later be processed
+ *
+ */
 struct Collection
 {
     void *collection[COLLECTION_SIZE];
@@ -28,6 +32,10 @@ struct Collection
     int id_record[COLLECTION_SIZE];
 };
 // Json
+/**
+ * @brief A json mimics a hashmap to store key-value pairs which can later be processed
+ *
+ */
 struct Json
 {
     char key[JSON_KEY_MAX_LENGTH];
@@ -37,43 +45,79 @@ struct Json
 };
 
 // Collection Data Types
+/**
+ * @brief Represents a string value within a Collection
+ *
+ */
 typedef struct
 {
     char str[COLLECTION_STRING_SIZE];
 } CollectionString;
+/**
+ * @brief Represents a numerical value within a Collection
+ *
+ */
 typedef struct
 {
     char num[COLLECTION_NUMBER_SIZE];
 } CollectionNumber;
+/**
+ * @brief Represents a boolean value within a Collection
+ *
+ */
 typedef struct
 {
     int boolean;
 } CollectionBoolean;
+/**
+ * @brief Represents an array (nested Collection) within a Collection
+ *
+ */
 typedef struct
 {
     struct Collection arr;
 } CollectionArray;
+/**
+ * @brief Represents a json value within a Collection
+ *
+ */
 typedef struct
 {
     struct Json jsonObject;
 } CollectionJsonObject;
 
 // Json Data Types
+/**
+ * @brief Represents a string value within Json
+ *
+ */
 typedef struct
 {
     char key[JSON_KEY_MAX_LENGTH];
     char str[JSON_STRING_SIZE];
 } JsonString;
+/**
+ * @brief Represents a numerical value within Json
+ *
+ */
 typedef struct
 {
     char key[JSON_KEY_MAX_LENGTH];
     char num[JSON_NUMBER_SIZE];
 } JsonNumber;
+/**
+ * @brief Represents a boolean value within Json
+ *
+ */
 typedef struct
 {
     char key[JSON_KEY_MAX_LENGTH];
     int boolean;
 } JsonBoolean;
+/**
+ * @brief Represents an array (Collection) value within Json
+ *
+ */
 typedef struct
 {
     char key[JSON_KEY_MAX_LENGTH];
