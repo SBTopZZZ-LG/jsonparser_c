@@ -1,0 +1,54 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "name": "Saumitra",
+            "email": "dev1912.sbtopzzz@gmail.com",
+            "phoneNumber": 1234567890,
+            "favouriteColours": [
+                "Black",
+                "Blue",
+                "Purple"
+            ],
+            "favouriteNumbers": [
+                7,
+                69,
+                420
+            ],
+            "details": {
+                "bio": "MyBio",
+                "socials": {
+                    "linkedin": "https://www.linkedin.com/in/saumitra-topinkatti-45a577208/",
+                    "instagram": "https://www.instagram.com/professor_oof/",
+                    "facebook": "https://www.facebook.com/SBTopzzz/",
+                    "github": "https://github.com/SBTopZZZ-LG/"
+                }
+            }
+        },
+        {
+            "id": 2,
+            "name": "AuroraAnderson",
+            "email": "AuroraJAnderson@armyspy.com",
+            "phoneNumber": 2096349709,
+            "favouriteColours": [
+                "Red",
+                "White",
+                "Green"
+            ],
+            "favouriteNumbers": [
+                1,
+                13,
+                69
+            ],
+            "details": {
+                "bio": "RealEstateBroker",
+                "socials": {
+                    "linkedin": "None",
+                    "instagram": "None",
+                    "facebook": "None",
+                    "github": "None"
+                }
+            }
+        }
+    ]
+}

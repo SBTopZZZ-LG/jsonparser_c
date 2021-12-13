@@ -1,0 +1,5 @@
+# Vscode dir
+/.vscode
+
+# Build files
+/example/main.dSYM
